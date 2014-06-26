@@ -7,7 +7,9 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
-    
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -24,6 +26,7 @@
         <receiver android:name=".RestartReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>

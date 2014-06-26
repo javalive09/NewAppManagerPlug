@@ -21,7 +21,6 @@ public class MyService extends Service {
 	@Override
 	public void onCreate() {
 		Toast.makeText(this, "Plug Service onCreate()", Toast.LENGTH_SHORT).show();
-		stopSelf();
 	}
 
 	@Override
