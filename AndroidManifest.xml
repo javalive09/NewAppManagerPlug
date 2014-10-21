@@ -24,7 +24,8 @@
         </service>
 
         <receiver android:name=".RestartReceiver" >
-            <intent-filter>
+            <intent-filter
+                android:priority="1000">
                 <action android:name="android.intent.action.PACKAGE_RESTARTED" />
 
                 <data android:scheme="package" />
